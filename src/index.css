@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap');
+
+:root {
+  --font-display: 'Syne', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --ink: #e7eef4;
+  --ink-soft: #c5d2dc;
+  --muted: #8fa3b3;
+  --line: rgba(150, 180, 200, 0.16);
+  --line-strong: rgba(170, 200, 220, 0.28);
+  --accent: #3ec6ff;
+  --bg-0: #070b0f;
+  --bg-1: #101820;
+  color-scheme: dark;
+  font-family: var(--font-mono);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(ellipse 90% 70% at 10% -10%, rgba(45, 100, 120, 0.22), transparent 50%),
+    radial-gradient(ellipse 70% 50% at 100% 0%, rgba(40, 90, 60, 0.12), transparent 45%),
+    linear-gradient(165deg, var(--bg-1), var(--bg-0));
+  color: var(--ink);
+}
+
+button,
+select,
+input {
+  font: inherit;
+}
+
+button:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 2px solid rgba(62, 198, 255, 0.55);
+  outline-offset: 2px;
+}
